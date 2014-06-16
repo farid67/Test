@@ -18,11 +18,11 @@ install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/app/main.c DESTINATION src/app)
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/doc/README DESTINATION doc )
 
 # librairie
-#find_file (
-#	lib_win 
-#	libTest.dll 
-#	${CMAKE_CURRENT_SOURCE_DIR}/src/lib
-#)
+find_file (
+	lib_win 
+	libTest.dll 
+	${CMAKE_CURRENT_SOURCE_DIR}/src/lib
+)
 #if (lib_win) # comprendre : si un dll est trouvé
 #install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/build/src/lib/libTest.dll DESTINATION include)
 #ELSE(lib_win)
