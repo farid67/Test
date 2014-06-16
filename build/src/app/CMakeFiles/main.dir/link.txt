@@ -1,0 +1,1 @@
+/usr/bin/gcc  -g    CMakeFiles/main.dir/main.c.o  -o main -rdynamic ../lib/liblibTest.so -Wl,-rpath,/var/lib/jenkins/workspace/Test-jenkins_03.06/build/src/lib: 

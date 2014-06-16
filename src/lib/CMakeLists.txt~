@@ -22,4 +22,4 @@ GENERATE_EXPORT_HEADER(
 )
 
 
-install (TARGETS libTest LIBRARY DESTINATION include)
+

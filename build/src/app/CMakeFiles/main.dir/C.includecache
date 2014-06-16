@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/app/../lib/test.h
+stdio.h
+-
+stdlib.h
+-
+libTest_Export.h
+../src/app/../lib/libTest_Export.h
+
+/var/lib/jenkins/workspace/Test-jenkins_03.06/src/app/main.c
+test.h
+/var/lib/jenkins/workspace/Test-jenkins_03.06/src/app/test.h
+
+src/app/../lib/libTest_Export.h
+
