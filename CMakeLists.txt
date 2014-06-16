@@ -11,7 +11,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/app)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/lib)
 
 
-install( TARGETS libTest ARCHIVE DESTINATION /src/lib )
+
 install (TARGETS main RUNTIME DESTINATION bin)
 install (FILES test.h DESTINATION include)
 SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "My funky project")
