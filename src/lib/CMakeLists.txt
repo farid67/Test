@@ -6,7 +6,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 add_library(
 
-		libTest
+	libTest
 
         SHARED
 
@@ -20,5 +20,6 @@ GENERATE_EXPORT_HEADER(
 		EXPORT_MACRO_NAME libTest_EXPORT
 		EXPORT_FILE_NAME libTest_Export.h
 )
+
 
 

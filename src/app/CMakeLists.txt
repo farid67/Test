@@ -21,3 +21,6 @@ target_link_libraries(
 
 )
 
+#executable
+install (TARGETS main RUNTIME DESTINATION bin)
+
