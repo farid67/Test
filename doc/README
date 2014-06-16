@@ -1,0 +1,12 @@
+Projet Hello World
+
+########
+
+	Affichage à l'écran de "Hello World" : 
+	compilation avec une librairie dynamique (librairie qui sera appelée uniquement lors de l'exécution)
+	->		Utilisation de CMake + NMake sous Windows 
+				(important utilisation de GENERATE_EXPORT_HEADER dans le fichier CMakeLists.txt)
+				spécifier le nom du header contenant les "dllimport" et "dllexport" avant le nom des fonctions au niveau de leur prototypes
+				/!\ Important ! Il faut que le fichier .dll le .h et l'éxécutable soit dans le même répertoire ou que le dll soit dans le PATH pour ne pas qu'il y ait d'erreurs
+	-> 		Utilisation de CMake + Make sous Linux, création d'un .so qui sera utilisé lors de l'exécution
+	
