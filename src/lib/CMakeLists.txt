@@ -25,3 +25,4 @@ if(WIN)
 install (TARGETS libTest ARCHIVE DESTINATION include)
 ELSE
 install (TARGETS libTest LIBRARY DESTINATION include)
+ENDIF()
