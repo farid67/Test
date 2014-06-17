@@ -21,5 +21,7 @@ GENERATE_EXPORT_HEADER(
 		EXPORT_FILE_NAME libTest_Export.h
 )
 
-
+if(WIN)
 install (TARGETS libTest ARCHIVE DESTINATION include)
+ELSE
+install (TARGETS libTest LIBRARY DESTINATION include)
