@@ -1,2 +1,2 @@
 cd build
-cpack
+/usr/local/Cellar/cmake/2.8.12.2/bin/cpack
