@@ -1,3 +1,4 @@
 cd build
+unset $var
 $var=`which cpack`
 $var 
