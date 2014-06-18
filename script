@@ -1,5 +1,4 @@
 cd build
-echo `pwd`
 if [ -n $var ]
 then 
   unset var
