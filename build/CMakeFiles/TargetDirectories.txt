@@ -1,2 +1,0 @@
-/home/farid/Documents/Test/build/src/lib/CMakeFiles/libTest.dir
-/home/farid/Documents/Test/build/src/app/CMakeFiles/main.dir

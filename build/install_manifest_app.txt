@@ -1,4 +1,0 @@
-/usr/src/lib/test.c
-/usr/src/app/main.c
-/usr/doc/README
-/usr/bin/main

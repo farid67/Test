@@ -1,1 +1,0 @@
-/usr/bin/gcc      CMakeFiles/main.dir/main.c.o  -o main -rdynamic ../lib/liblibTest.so -Wl,-rpath,/home/farid/Documents/Test/build/src/lib: 
