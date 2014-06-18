@@ -29,7 +29,7 @@ ELSE()
 install (TARGETS libTest LIBRARY DESTINATION include COMPONENT dev)
 ENDIF()
 
-install (FILES ${EXPORT_FILE_NAME} COMPONENT lib)
+install (FILES ${CMAKE_CURRENT_BINARY_DIR}/libTest_Export.h DESTINATION library COMPONENT lib)
 
 
 
