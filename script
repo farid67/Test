@@ -3,5 +3,5 @@ if [ -n $var ]
 then 
   unset var
 fi
-$var=`which cpack`
+var=`which cpack`
 $var 
