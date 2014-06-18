@@ -1,0 +1,10 @@
+Package: hello-lib
+Version: 1.0.0
+Section: devel
+Priority: optional
+Architecture: i386
+Depends: basic-files
+Installed-Size: 1
+Maintainer: farid.ouhmich@hotmail.fr
+Description: Hello Project
+

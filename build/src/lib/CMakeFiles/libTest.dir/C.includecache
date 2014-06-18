@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/farid/Documents/Test/src/lib/test.c
+test.h
+/home/farid/Documents/Test/src/lib/test.h
+
+/home/farid/Documents/Test/src/lib/test.h
+stdio.h
+-
+stdlib.h
+-
+libTest_Export.h
+/home/farid/Documents/Test/src/lib/libTest_Export.h
+
+src/lib/libTest_Export.h
+
