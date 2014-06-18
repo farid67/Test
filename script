@@ -1,5 +1,5 @@
 cd build
-if [ $var != " " ]
+if [ -n $var ]
 then 
   unset var
 fi
