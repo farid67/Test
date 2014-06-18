@@ -21,8 +21,14 @@ GENERATE_EXPORT_HEADER(
 		EXPORT_FILE_NAME libTest_Export.h
 )
 
+
+#librairie
 if(WIN32)
-install (TARGETS libTest ARCHIVE DESTINATION include)
+install (TARGETS libTest ARCHIVE DESTINATION include COMPONENT dev)
 ELSE()
-install (TARGETS libTest LIBRARY DESTINATION include)
+install (TARGETS libTest LIBRARY DESTINATION include COMPONENT dev)
 ENDIF()
+
+install (FILES ${CMAKE_CURRENT_BINARY_DIR}/libTest_Export.h DESTINATION / COMPONENT lib)
+
+

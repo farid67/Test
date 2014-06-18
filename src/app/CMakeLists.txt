@@ -22,5 +22,6 @@ target_link_libraries(
 )
 
 #executable
-install (TARGETS main RUNTIME DESTINATION bin)
+install (TARGETS main RUNTIME DESTINATION bin COMPONENT app)
+
 
