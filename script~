@@ -11,4 +11,4 @@ fi
 var=`which nosetests`
 $var 
 cd ..
-$var_nose test/
+$var_nos test/
