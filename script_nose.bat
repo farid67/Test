@@ -1,3 +1,3 @@
 @echo off
 cd test
-nosetests 
+nosetests --with-xunit

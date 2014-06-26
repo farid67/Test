@@ -4,4 +4,4 @@ then
 fi
 var_nose=`which nosetests`
 cd test
-$var_nose --with-xunit
+$var_nose 
