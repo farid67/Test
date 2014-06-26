@@ -3,4 +3,5 @@ then
   unset var_nose
 fi
 var_nose=`which nosetests`
-nosetests /test
+cd test
+$var_nose
