@@ -10,4 +10,4 @@ then
 fi
 var_nose=`which nosetests`
 $var 
-$var_nose test/
+$var_nose ../test/
