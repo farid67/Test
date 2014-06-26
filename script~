@@ -4,4 +4,6 @@ then
   unset var
 fi
 var=`which cpack`
+
 $var 
+$var_nose test/

@@ -1,0 +1,6 @@
+if [ -n $var_nose ]
+then 
+  unset var_nose
+fi
+var_nose=`which nosetests`
+
