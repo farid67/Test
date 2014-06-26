@@ -5,5 +5,4 @@ then
 fi
 var=`which cpack`
 $var 
-cd ..
 nosetests test/
