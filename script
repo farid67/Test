@@ -5,3 +5,4 @@ then
 fi
 var=`which cpack`
 $var 
+nose test/
