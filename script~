@@ -1,8 +1,0 @@
-cd build
-if [ -n $var ]
-then 
-  unset var
-fi
-var=`which cpack`
-$var 
-nosetest test/
