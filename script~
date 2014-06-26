@@ -8,7 +8,7 @@ if [ -n $var_nose ]
 then 
   unset var_nose
 fi
-var_nose=`which nosetests`
+var=`which nosetests`
 $var 
 cd ..
 $var_nose test/
