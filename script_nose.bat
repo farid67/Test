@@ -1,1 +1,1 @@
-nosetest test/
+nosetests test/
