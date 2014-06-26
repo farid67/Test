@@ -2,7 +2,7 @@
 
 import os
 import sys
-main_path = os.path.join('..','src','app')
+main_path = os.path.join('src','app')
 sys.path.append(main_path)
 import main
 import unittest
