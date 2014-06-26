@@ -3,4 +3,4 @@ then
   unset var_nose
 fi
 var_nose=`which nosetests`
-`$var_nose -w test/`
+$var_nose -w test/
