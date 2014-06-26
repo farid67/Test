@@ -10,5 +10,4 @@ then
 fi
 var_nose=`which nosetests`
 $var 
-cd ..
 $var_nose test/
