@@ -13,7 +13,7 @@ class KnownValues(unittest.TestCase):
         name = "Jean"
         expected_result = "Hello {0}".format(name)
         result = main.displayName(name)
-        self.assertEqual(expected_result,result)
+        self.assertEqual(waited_result,result)
 
 class DisplayNameBadInput(unittest.TestCase):
     def testBlank(self):
