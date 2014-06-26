@@ -3,5 +3,5 @@ then
   unset var_nose
 fi
 var_nose=`which nosetests`
-#cd test
+cd test
 $var_nose test
