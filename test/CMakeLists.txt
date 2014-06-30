@@ -1,0 +1,28 @@
+find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/../src/lib) # include libTest_Export.h
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../src/lib) # include test.hpp
+link_directories(${Boost_LIBRARY_DIRS})
+
+ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK)
+
+file(GLOB_RECURSE tests *.cpp)
+foreach(test_file ${tests})
+    #on construit l'exécutable de test
+    get_filename_component(test ${test_file} NAME_WE)
+    add_executable(${test} ${test_file})
+    target_link_libraries( ${test} ${Boost_LIBRARIES} libTest) #important pour l'exé
+
+    # On cherche tous les cas dans le fichier source
+    file(READ ${test_file} content)
+    set(pattern "BOOST_(AUTO|FIXTURE)_TEST_CASE\\(([^),]+)")
+    string (REGEX MATCHALL ${pattern} cases ${content})
+
+    # Pour chaque cas, on génère un test Cmake 
+    foreach(case ${cases})
+        string (REGEX REPLACE ${pattern}  "\\2" case ${case})
+        add_test("${test}_${case}" "${test}" "--run_test=${case} --report_format=xml --report_level=detailed --log_level=MonTest --log_format=xml")
+    endforeach()
+
+endforeach()
+

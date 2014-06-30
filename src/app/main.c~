@@ -1,0 +1,9 @@
+// le fichier main.c deviendra main.cpp car on a besoin de la lib boost // 
+
+#include "test.h"
+
+int main (int argc, char *argv[])
+{
+	affiche();
+	return 0;
+}
