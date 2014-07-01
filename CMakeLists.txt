@@ -9,17 +9,4 @@ enable_testing()
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/app)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/lib)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/test)
-
-
-# division en 3 paquets : Hello (app + src) Hello-lib (.so) Hello-dev (.so) -> les 2 premiers dépendent du dév
-
-# fichiers de base
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/test.h DESTINATION library COMPONENT lib)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/test.c DESTINATION src/lib COMPONENT app)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/app/main.c DESTINATION src/app COMPONENT app)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/doc/README DESTINATION doc COMPONENT app)
-
-
-
-include (CPack.txt)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Tests)

@@ -1,27 +1,15 @@
-#Configuration de l'exécutable
-
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../lib 
-					${CMAKE_CURRENT_BINARY_DIR}/../lib)
-
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../lib/
+                    ${CMAKE_CURRENT_BINARY_DIR}/../lib/
+                    )
+                    
 add_executable(
-
-        main
-
-		main.c
-
+        main 
+        main.cpp
 )
-
-#Configuration de l'édition de liens
 
 target_link_libraries(
-
-        main
-		
-		libTest
-
-)
-
-#executable
-install (TARGETS main RUNTIME DESTINATION bin COMPONENT app)
-
-
+        main 
+        libTest
+        )
+        
+        

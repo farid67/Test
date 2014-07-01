@@ -1,0 +1,5 @@
+@echo off
+cd build 
+ctest --no-compress-output -T Test
+cd ..
+verify >nul

@@ -1,0 +1,10 @@
+cd build 
+if [ -n $var_ctest ]
+then 
+  unset var_ctest
+fi
+var_ctest=`which ctest`
+$var_ctest --no-compress-output -T Test
+cd ..
+verify >nul
+python CTest2JUnit.py build converter.xsl > build/JUnitResults.xml
