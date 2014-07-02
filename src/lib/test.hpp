@@ -7,17 +7,18 @@
 
 using namespace std;
 
-class Test 
+class libTest_EXPORT Test 
 {
     public :
     
         Test();
         Test(string name);
         void displayString ();
-        string return_string;
         ~Test();
-
+        string get_string();
+        void set_string(string new_string);
     private :
+        string return_string;
 };
 
 #endif

@@ -19,3 +19,13 @@ Test::~Test()
 {
     // destructor
 }
+
+void Test::set_string(string new_string)
+{
+	return_string = "Hello " + new_string;
+}
+
+string Test::get_string()
+{
+	return return_string;
+}

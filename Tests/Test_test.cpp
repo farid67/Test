@@ -10,12 +10,15 @@ using namespace std;
 BOOST_AUTO_TEST_CASE(constructor_test)
 {
     Test t("Jean");
-    BOOST_CHECK_EQUAL(t.return_string,"Hello Jean");
-}
-
-BOOST_AUTO_TEST_CASE(length_test)
-{
+    BOOST_CHECK_EQUAL(t.get_string(),"Hello Jean");
     Test t2("Pierre");
-    BOOST_CHECK_EQUAL(t2.return_string.length(),strlen("Hello Pierre"));
+    BOOST_CHECK_EQUAL(t2.get_string().length(),strlen("Hello Pierre"));
 }
 
+BOOST_AUTO_TEST_CASE(get_and_set_tests)
+{
+	Test t3("Henry");
+	BOOST_CHECK_EQUAL(t3.get_string(),"Hello Henry");
+	t3.set_string("Jean");
+	BOOST_CHECK_EQUAL(t3.get_string(),"Hello Jean");
+}
