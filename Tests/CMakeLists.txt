@@ -1,3 +1,4 @@
+add_definitions(-DBOOST_ALL_NO_LIB)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 
