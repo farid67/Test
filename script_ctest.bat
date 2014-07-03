@@ -1,7 +1,8 @@
 @echo off
 cd build 
-set PATH=%PATH%;${WORKSPACE}/build/src/lib
-echo %PATH%
+echo %WORKSPACE%
+#set PATH=%PATH%;${WORKSPACE}/build/src/lib
+#echo %PATH%
 ctest --no-compress-output -T Test
 cd ..
 verify >nul
