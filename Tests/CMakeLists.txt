@@ -7,6 +7,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../src/lib) # include test.hpp
 include_directories(${DIR}) #ajouté pour trouvé boost/test/unit_test.hpp
 link_directories(${Boost_LIBRARY_DIRS})
 
+
 ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK)
 
 file(GLOB_RECURSE tests *.cpp )
