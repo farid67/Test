@@ -29,3 +29,8 @@ foreach(test_file ${tests})
     endforeach()
     
 endforeach()
+
+#Test
+
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/Tests/testmain.py DESTINATION src COMPONENT test)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/Tests/Test_test.cpp DESTINATION src COMPONENT test)

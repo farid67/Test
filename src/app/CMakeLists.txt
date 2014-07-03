@@ -12,4 +12,5 @@ target_link_libraries(
         libTest
         )
         
-        
+#executable 
+install (TARGETS main RUNTIME DESTINATION bin COMPONENT app)
