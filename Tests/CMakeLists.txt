@@ -4,6 +4,7 @@ find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/../src/lib) # include libTest_Export.h
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../src/lib) # include test.hpp
+include_directories(${DIR}) #ajouté pour trouvé boost/test/unit_test.hpp
 link_directories(${Boost_LIBRARY_DIRS})
 
 ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK)
