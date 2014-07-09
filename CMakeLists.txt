@@ -1,3 +1,5 @@
+#pour ajouter le module CodeCoverage
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMakeModules/" )
 include (GenerateExportHeader)
 INCLUDE(InstallRequiredSystemLibraries)
 
@@ -6,6 +8,15 @@ cmake_minimum_required(VERSION 2.6)
 project(Hello)
 
 enable_testing()
+
+if (CMAKE_COMPILER_IS_GNUCXX)
+	include (CodeCoverage)
+	setup_target_for_coverage(
+							my_coverage_test #nom de la cible
+							Test_test
+							coverage #répertoire de sortie
+							)
+endif()
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/app)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src/lib)
