@@ -1,4 +1,5 @@
 @echo off
+JOB_NAME=${JOB_NAME%/label*}
 echo "set(CTEST_PROJECT_NAME \"${JOB_NAME}\")" >> CTestConfig.cmake
 echo "set(CTEST_NIGHTLY_START_TIME \"01:00:00 UTC\")" >> CTestConfig.cmake
 echo " " >> CTestConfig.cmake
