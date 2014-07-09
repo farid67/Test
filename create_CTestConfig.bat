@@ -1,5 +1,5 @@
 @echo off
-echo "set(CTEST_PROJECT_NAME \"%NODE_NAME%\")" >> CTestConfig.cmake
+echo "set(CTEST_PROJECT_NAME "%NODE_NAME%")" >> CTestConfig.cmake
 echo "set(CTEST_NIGHTLY_START_TIME \"01:00:00 UTC\")" >> CTestConfig.cmake
 echo " " >> CTestConfig.cmake
 echo " set(CTEST_DROP_METHOD \"http\") " >> CTestConfig.cmake
