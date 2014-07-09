@@ -1,1 +1,1 @@
-echo ${JOB_NAME}
+echo 'set(CTEST_PROJECT_NAME \"${JOB_NAME}\")' > CTestConfig.cmake
