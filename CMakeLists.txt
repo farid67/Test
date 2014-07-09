@@ -18,3 +18,4 @@ install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/app/main.cpp DESTINATION src/app 
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/doc/README DESTINATION doc COMPONENT app)
 
 include (CPack.txt)
+include(CTest)
