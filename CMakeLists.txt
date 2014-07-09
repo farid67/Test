@@ -13,7 +13,7 @@ if (CMAKE_COMPILER_IS_GNUCXX)
 	include (CodeCoverage)
 	setup_target_for_coverage(
 							my_coverage_test #nom de la cible
-							Test_test
+							Test_test #nom de l'exécutable permettant de lancer des tests
 							coverage #répertoire de sortie
 							)
 endif()
